@@ -1,12 +1,75 @@
-# React + Vite
+# Background Remover Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite web application for background removal. This project features a clean UI, interactive components, and is ready for deployment on Vercel.
 
-Currently, two official plugins are available:
+## Features
+- Fast, modern React (with Vite)
+- Tailwind CSS for styling
+- Component-based architecture
+- Ready for Vercel deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+### Development
+To start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+
+### Build for Production
+To build the app for production:
+```bash
+npm run build
+```
+The output will be in the `dist/` directory.
+
+### Preview Production Build
+To locally preview the production build:
+```bash
+npm run preview
+```
+
+## Deploying to Vercel
+1. **Push your code to GitHub (or GitLab/Bitbucket).**
+2. **Go to [Vercel](https://vercel.com/) and import your repository.**
+3. **Select the Vite framework preset.**
+4. **Use the default build command (`npm run build`) and output directory (`dist`).**
+5. **Deploy!**
+
+> The included `vercel.json` ensures correct routing for single-page applications.
+
+## Project Structure
+```
+├── public/           # Static assets
+├── src/              # Source code
+│   ├── assets/       # Images, videos, etc.
+│   ├── components/   # React components
+│   ├── pages/        # Page components
+│   └── App.jsx       # Main app component
+├── package.json      # Project metadata and scripts
+├── vite.config.js    # Vite configuration
+└── vercel.json       # Vercel deployment config
+```
+
+## License
+[MIT](LICENSE)  
+
+---
+
+**Made with ❤️ using React, Vite, and Tailwind CSS.**
